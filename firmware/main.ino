@@ -1,9 +1,11 @@
-/* Written by Daniel Kiv
+/*
+ * MINTS
+ * Written by Daniel Kiv
  * Version 0.1
  */
 
 #include <math.h>
-#include <stdio.h>  
+#include <stdio.h>
 #include "Seeed_BMP280.h"
 #include <Wire.h>
 #include <LoRaWan.h>
@@ -80,14 +82,14 @@ void setup() {
         SerialUSB.println(F("No GPS detected: check wiring."));
         SerialUSB.println(gps.charsProcessed());
         while(true);
-      } 
+      }
       else if (millis() > 20000) {
-        SerialUSB.println(F("Not able to get a fix in alloted time."));     
+        SerialUSB.println(F("Not able to get a fix in alloted time."));
         break;
       }
     }
 #endif
-  
+
   pinMode(pin,INPUT);
   if(!bmp280.init()) {
     SerialUSB.println("Device error!");
@@ -97,7 +99,7 @@ void setup() {
   // LoRaWan initializations
   memset(buffer, 0, 256);
   lora.getVersion(buffer, 256, 1);
-  SerialUSB.print(buffer); 
+  SerialUSB.print(buffer);
 
   memset(buffer, 0, 256);
   lora.getId(buffer, 256, 1);
@@ -141,7 +143,7 @@ void setup() {
   lora.setPower(14);
 
   SerialUSB.println("System booted!");
-  
+
 }
 
 void loop() {
@@ -216,12 +218,12 @@ void loop() {
   result = lora.transferPacket(payload);
 
   delay(500);
-  
+
 //    memset(payload, '\0', 200);
 }
 
 void barometer() {
-  
+
   //sprintf (intStr, "%d", int1);
   //get and print temperatures
   SerialUSB.print("Temp: ");
@@ -229,9 +231,9 @@ void barometer() {
   SerialUSB.println("C");
 
   // ---------------- WORK -------------
-  
+
   //sendATcommand("AT+CMSG=Pressure,","Done",2000);
-  
+
   //get and print atmospheric pressure data
   SerialUSB.print("Pressure: ");
   pressure = bmp280.getPressure();
