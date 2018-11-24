@@ -9,26 +9,27 @@ This report gives the details of the sensor network and technical requirements.
 ### Sensors
 These sensors are attached to the device.
 
-| Sensor name     | Description  | Interface  |
+| Sensor name | Description | Interface |
 |---------------------|-----------------|------------|
 | [Grove Dust Sensor](https://www.seeedstudio.com/Grove-Dust-Sensor-p-1050.html/)  | Measures low pulse occupancy time as a correlate to particular matter. | Digital pin |
 | [Grove Barometer Sensor](https://www.seeedstudio.com/depot/Grove-Barometer-Sensor-BMP280-p-2652.html/) | Measures temperature (celcius) and atmospheric pressure. | I2C | 
-| [Grove Multichannel Gas Sensor](https://www.seeedstudio.com/Grove-Multichannel-Gas-Sensor-p-2502.html/) | Measures carbon monoxide, nitrogen dioxide, ethanol, hydrogen, ammonia, methane, propane, and iso-butane in ppm. | I2C |
+| [Grove Multichannel Gas Sensor](https://www.seeedstudio.com/Grove-Multichannel-Gas-Sensor-p-2502.html/) | Measures carbon monoxide, nitrogen dioxide, ethanol, hydrogen, ammonia, methane, propane, and isobutane in ppm. | I2C |
 
 ### Physical Characteristics
 #### Dimensions
 Seeeduino device dimensions with add-ons: 65mm x 55mm x 45mm (L x W x H) <br/>
 Gateway device dimensions: 85mm x 55mm x 30mm (L x W x H, without antenna)
 
-Seeeduino device enclosure:
-- See "3DModel" folder for computerized mode of the casing. <br/>
-Gateway device enclosure: (7.00" H x 3.73" W x 3.98" D)
+Seeeduino device enclosure: 120.00mm x 120.00mm x 275.00mm (L x W x H)
+- See "3DModel" folder for computerized mode of the casing.
+
+Gateway device enclosure: X
 
 #### Weight
 Seeeduino device weight with add-ons: 0.25 kilograms <br/>
-Gateway device weight: X
+Gateway device weight: 0.20 kilograms
 
-Seeeduino device with enclosure: X  </br>
+Seeeduino device with enclosure: 0.60 kilograms  </br>
 Gateway device with enclosure: X
 
 #### Power Requirements
