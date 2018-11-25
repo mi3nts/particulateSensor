@@ -20,8 +20,8 @@ These sensors are attached to the device.
 Seeeduino device dimensions with add-ons: 65mm x 55mm x 45mm (L x W x H) <br/>
 Gateway device dimensions: 85mm x 55mm x 30mm (L x W x H, without antenna)
 
-Seeeduino device enclosure: 120.00mm x 120.00mm x 275.00mm (L x W x H)
-- See "3DModel" folder for computerized mode of the casing.
+Seeeduino device enclosure: 120mm x 120mm x 275mm (L x W x H)
+- See "3DModel" folder for computerized model of the casing.
 
 Gateway device enclosure: X
 
